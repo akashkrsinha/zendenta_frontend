@@ -1,0 +1,369 @@
+.home {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 14% auto;
+}
+
+.resizeHome {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3% auto;
+}
+
+.left {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+}
+
+.right {
+    background-color: rgb(242, 245, 249);
+    height: 100%;
+    display: grid;
+    grid-template-rows: 8% 8% auto;
+}
+
+.leftUp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftMiddle {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItem {
+    height: 10%;
+    width: 100%;
+}
+
+.falseBarMenu {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menuItem i,
+.activeMenu i {
+    height: 10%;
+    font-size: 15px;
+    margin: 10%;
+}
+
+
+.activeMenu {
+    background-color: blue;
+    color: white;
+    height: 10%;
+}
+
+.falseBarActiveMenu {
+    background-color: blue;
+    color: white;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideContent {
+    display: none;
+}
+
+.leftBottom {
+    border-top: 1px solid grey;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.upFirst {
+    width: 20%;
+    height: 50%;
+    margin: 3%;
+}
+
+.upFirst img {
+    height: 100%;
+    width: 100%;
+}
+
+.upSecond {
+    width: 60%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-left: 3%;
+}
+
+.upSecond .text1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.upSecond .text2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(173, 172, 172);
+}
+
+.upThird {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
+}
+
+.upThird i {
+    font-size: 20px;
+}
+
+.helpDiv {
+    height: 10%;
+    margin-top: auto;
+    color: grey;
+}
+
+.falseBarHelpDiv {
+    height: 10%;
+    margin-top: auto;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.helpDiv i,
+.activeHelp i {
+    height: 10%;
+    font-size: 15px;
+    margin: 10%;
+}
+
+.activeHelp {
+    background-color: blue;
+    color: white;
+    height: 10%;
+    margin-top: auto;
+}
+
+.falseBarActiveHelp {
+    background-color: blue;
+    color: white;
+    height: 10%;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomFirst {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 6%;
+}
+
+.bottomFirst img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.bottomText1 {
+    font-size: 14px;
+}
+
+.bottomText2 {
+    font-size: 11px;
+    color: grey
+}
+
+.bottomThird {
+    margin: 10%;
+}
+
+.rightFirst {
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.rightSecond {
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.rightFirst {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.right .rightFirst i {
+    font-size: 25px;
+    color: blue;
+}
+
+.right .rightFirst .rightTopText {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 1%;
+}
+
+.inputSearchDiv {
+    margin-left: auto;
+    margin-right: .4%;
+    height: 33px;
+    width: 14%;
+    position: relative;
+    color: grey;
+}
+
+.inputSearchDiv .searchText {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 14px;
+}
+
+.inputSearchDiv .searchText i {
+    font-size: 12px;
+}
+
+.right .rightFirst input {
+    height: 33px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid rgb(208, 208, 208);
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.right .rightFirst .rightTopCircle {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    margin-right: 1%;
+}
+
+.right .rightFirst .rightTopCircle .circleVerticalLine {
+    height: 50%;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    left: 48%;
+    top: 25%;
+}
+
+.right .rightFirst .rightTopCircle .circleHorizontalLine {
+    height: 2px;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top: 48%;
+    left: 25%;
+}
+
+.right .rightFirst .bellCircle {
+    height: 33px;
+    width: 33px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.right .rightFirst .bellCircle i {
+    font-size: 16px;
+    color: grey;
+}
+
+.right .rightFirst .bellCircle .smallCircle {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: -10%;
+    top: 10%;
+}
+
+.rightSecond {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.rightSecond i {
+    margin-left: 1%;
+    color: grey;
+    font-size: 25px;
+}
+
+.rightSecond .rightSecondText2 {
+    margin-left: 1%;
+    color: grey;
+}
+
+.printerDiv {
+    margin-left: auto;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.printerDiv img {
+    height: 18px;
+    position: absolute;
+    top: 24%;
+    left: 24%;
+}
+
+.editPatientDiv {
+    height: 30px;
+    width: 10%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+
+.editPatientDiv .innerEditContainer {
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.editPatientDiv .innerEditContainer i {
+    font-size: 15px;
+    margin-right: 5%;
+}
+
+#afterDocPanelCollapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
