@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zendenta_frontend/static/css/main.a6444748.css",
+    "main.js": "/zendenta_frontend/static/js/main.7ea60077.js",
+    "static/media/doctorPic.png": "/zendenta_frontend/static/media/doctorPic.bbab880ef983bb0c2213.png",
+    "static/media/userImage.png": "/zendenta_frontend/static/media/userImage.96752d9075bac962dd60.png",
+    "index.html": "/zendenta_frontend/index.html",
+    "main.a6444748.css.map": "/zendenta_frontend/static/css/main.a6444748.css.map",
+    "main.7ea60077.js.map": "/zendenta_frontend/static/js/main.7ea60077.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6444748.css",
+    "static/js/main.7ea60077.js"
+  ]
+}
