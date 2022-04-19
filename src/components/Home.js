@@ -9,7 +9,7 @@ export default function Home() {
   const [toggle, setToggle] = useState(3)
   const [showBar, setShowBar] = useState(true)
   const [doctorPanel, setDoctorPanel] = useState(true)
-  const [data, setData] = useState()
+  const [patientDetails, setPatientDetails] = useState()
   const [doctorDetails, setDoctorDetails] = useState()
 
   const changeMenu = (index) => {
@@ -24,11 +24,11 @@ export default function Home() {
     setDoctorPanel(!doctorPanel)
   }
 
-  let fetchData = () => {
+  let patientData = () => {
     fetch('https://619f39821ac52a0017ba467e.mockapi.io/patientDetails')
       .then((response) => response.json())
       .then((json) => {
-        setData(json[0])
+        setPatientDetails(json[0])
       })
       .catch((error) => alert(error))
   }
@@ -43,7 +43,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    fetchData()
+    patientData()
     doctorData()
   }, [])
 
@@ -96,7 +96,7 @@ export default function Home() {
       <div className={style.right}>
         <div className={toggle === 3 ? style.rightFirst : style.hideContent}>
           <i className="fa-regular fa-user"></i>
-          <div className={style.rightTopText}>{data !== undefined ? data.name : ""}</div>
+          <div className={style.rightTopText}>{patientDetails !== undefined ? patientDetails.name : ""}</div>
           <div className={style.inputSearchDiv}>
             <input type='text'></input>
             <div className={style.searchText}><i className="fa fa-search" aria-hidden="true"></i> Search</div>
@@ -113,7 +113,7 @@ export default function Home() {
         <div className={toggle === 3 ? style.rightSecond : style.hideContent}>
           <div className={style.rightSecondText1}> Patient List</div>
           <i className='fas fa-angle-right'></i>
-          <div className={style.rightSecondText2}>{data !== undefined ? data.name : ""}</div>
+          <div className={style.rightSecondText2}>{patientDetails !== undefined ? patientDetails.name : ""}</div>
           <div className={style.printerDiv}><img src={printerIcon} alt='Printer Icon' /></div>
           <div className={style.editPatientDiv}>
             <div className={style.innerEditContainer}><i className="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Patient</div>
